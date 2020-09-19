@@ -7,7 +7,8 @@ var express = require("express"),
 
 
 // database config
-mongoose.connect('mongodb://localhost:27017/ca_sj', {
+var url = process.env.DATABASEURL || 'mongodb://localhost:27017/ca_sj';
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
