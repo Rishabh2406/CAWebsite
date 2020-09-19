@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Solway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/home.css">
+<link rel="stylesheet" href="../stylesheets/contact.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="font-size: 3em; font-family: 'Cookie', cursive;"><img class="logo"
+                src="../imgs/sj logo.png">Sweta Jain</a>
+        <hr>
+
+        <div class="collapse navbar-collapse navbar-right" id="navbarTogglerDemo03">
+            <ul class="navbar-nav navbar-right mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home </a>
+                </li>            
+				<li class="nav-item">
+                    <a class="nav-link" href="/classes">Class Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feedback">Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/videos">Video Lectures</a>
+                </li>
+
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="sm-icons">
+                    <a href="http://www.youtube.com"><i class="fa fa-youtube-play"
+                            style="font-size:30px;color:red"></i></a>
+                </li>
+                <li class="sm-icons">
+                    <a href="http://www.instagram.com"> <i class="fa fa-instagram"
+                            style="font-size:30px;color:rgb(255, 0, 170)"></i> </a>
+                </li>
+                <li class="sm-icons">
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook"
+                            style="font-size:30px;color:steelblue"></i>
+                    </a>
+                </li>
+                <li class="sm-icons">
+                    <a href="http://www.facebook.com"><i class="fa fa-linkedin-square"
+                            style="font-size:30px;color:steelblue"></i>
+                    </a>
+                </li>
+                <li class="sm-icons">
+                    <a href="http://www.facebook.com"><i class="fa fa-twitter"
+                            style="font-size:30px;color:rgb(rgb(86, 218, 241))"></i>
+
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+	
+	<div class="container">
+			<%if(error && error.length > 0){%>
+				<div class="alert alert-danger" role="alert">
+					<%= error %>
+				</div>
+			<%}%>
+			<%if(success && success.length > 0){%>
+				<div class="alert alert-success" role="alert">
+					<%= success %>
+				</div>
+			<%}%>
+			
+	</div>

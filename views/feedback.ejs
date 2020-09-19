@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Sweta Sancheti|Feedback</title>
+    <style>
+        body {
+            background-image: url('../imgs/feed-bg.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+        }
+    </style>
+<%- include("partials/nav") %>
+
+    <div class="container" id="firstsec1" style="color:black; padding-top: 15em; padding-bottom: 5em;">
+        <div class="container" style="display: flex; justify-content: center;">
+            <h1 style="color: white; font-weight: bold;">FEEDBACK FORM</h1>
+        </div>
+        <form action="/feedback" method="POST">
+            <div class="form-group">
+                <label for="feedname">Name:</label>
+                <input type="text" class="form-control" id="feedname" placeholder="Your name" name="feed[name]">
+            </div>
+            <div class="form-group">
+                <label for="feedphone">Phone no. :</label>
+                <input type="text" class="form-control" id="feedphone" placeholder="Your number" name="feed[phone]">
+            </div>
+            <div class="form-group">
+                <label for="feed">Feedback:</label>
+                <textarea id="feed" class="form-control" placeholder="Enter your feedback" name="feed[description]"> </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+	
+<%- include("partials/footer") %>

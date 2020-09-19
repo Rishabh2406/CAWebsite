@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Sweta Sancheti|Classes</title>
+    <style>
+        body {
+            background-image: url('../imgs/classes-bg.jpg');
+            background-attachment: fixed;
+            background-size: 60%;
+            background-position-y: center;
+            background-position-x: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+
+        }
+    </style>
+<%- include("partials/nav") %>
+
+    <div class="container" style="padding-top: 12em;">
+        <div class="container">
+            <h1 style="color: black; display:flex; font-weight: 800; padding-bottom:50px; justify-content: center;">
+                CLASS SCHEDULE<i class="fa fa-clock-o" style="padding-left: 10px ;font-size:60px"></i></h1>
+        </div>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Dates</th>
+                    <th scope="col">Morning Batch</th>
+                    <th scope="col">Evening Batch</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+				<%classes.forEach(function(cl){%>
+					<tr>
+						<th scope="row"><%=cl.date%></th>
+
+						<td><%=cl.morning%></td>
+						<td><%=cl.evening%></td>
+					</tr>
+				<%})%> 
+            </tbody>
+        </table>
+    </div>
+
+    <%- include("partials/footer") %>

@@ -1,0 +1,191 @@
+<%- include("partials/header") %>
+
+
+  <div class="container" style="float: right;position: absolute; z-index: 1; margin-top: 85vh;">
+    <button id="myBtn"
+      style="width: 85px; height: 85px;color: white;font-size: 1em; font-family: 'Lobster', cursive;background-color: rgba(250, 92, 92, 0.685); border: 8px solid rgba(12, 12, 12, 0.918); position: absolute; border-radius: 50%;">Ask
+      a doubt </button>
+  </div>
+
+  <!-- front intro page -->
+  <div class="firstsec" id="firstSec">
+    <div class="parallax" id="bg" style="color: white; ">
+
+      <h1 class="my-element" style="font-size: 5em; font-family: 'Solway', serif; opacity: 1.0;">CA Sweta Jain </h1>
+      <h1>Are you a CA aspirant?</h1>
+      <h4> Come join us today to accelerate your speed towards success.</h4>
+
+
+
+      <!-- modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Ask a doubt</h2>
+            <span class="close">&times;</span>
+
+          </div>
+          <div class="modal-body">
+            <form action="/doubt" method="POST">
+              <div class="form-group">
+                <label for="InputName" style="color: black;">Name:</label>
+                <input type="text" class="form-control" id="InputName" placeholder="Enter name" name="doubt[name]">
+              </div>
+              <div class="form-group">
+                <label for="InputEmail1" style="color: black;">Email address</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email" name="doubt[email]">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label for="InputNumber" style="color: black;">Phone no.-</label>
+                <input type="text" class="form-control" id="InputNumber" placeholder="Phone No." name="doubt[phone]">
+              </div>
+              <div class="form-group">
+                <label for="InputText" style="color: black;">Doubt:</label>
+                <textarea class="form-control" id="InputText" name="doubt[description]"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="background: steelblue;">Submit</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- a section named as coming soon for the book has to be created -->
+
+  <!-- student feedbacks(needs to be connected to the backend) -->
+  <div class="container">
+    <h1 class="student-feedbacks" style="color: rgb(55, 51, 78); align-items: center;
+  justify-content: center; 
+ display: flex; font-family: 'PT Serif', serif;">
+      Gratitude from our students</h1>
+
+  </div>
+
+  <div class="card-container" style="color: white;">
+    <div class="card">
+
+      <img src="../imgs/Swati.jpeg" alt="Person" class="card__image">
+      <p class="card__name">Swati R K</p>
+      <div class="grid-container">
+        <p>Favourite subject is always based on the teacher who taught you that subject first, My favourite subject is
+          Costing and the teacher who taught me that subject first was Swetha Ma'am, Among the many who teach us fixed
+          formulas and formats, she taught us the concept behind them which has never made me mug up any formula or
+          formats, Her style of teaching has not only helped me in this subject but it has helped me simplify all other
+          subjects which has made me a successful Chartered Accountant today!</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img
+        src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
+        alt="Person" class="card__image">
+      <p class="card__name">Harshita Jain</p>
+      <div class="grid-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quae perspiciatis id iusto tempore
+          quibusdam deleniti ea minus velit, optio similique maxime est beatae doloremque blanditiis. Rem, sequi beatae?
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
+        alt="Person" class="card__image">
+      <p class="card__name">Moumita</p>
+      <div class="grid-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quae perspiciatis id iusto tempore
+          quibusdam deleniti ea minus velit, optio similique maxime est beatae doloremque blanditiis. Rem, sequi beatae?
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
+        alt="Person" class="card__image">
+      <p class="card__name">Moumita</p>
+      <div class="grid-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quae perspiciatis id iusto tempore
+          quibusdam deleniti ea minus velit, optio similique maxime est beatae doloremque blanditiis. Rem, sequi beatae?
+        </p>
+      </div>
+    </div>
+	<%cards.forEach(function(card){%>
+	  	<div class="card">
+		  <img
+			src="<%= card.image%>"
+			alt="Person" class="card__image">
+		  <p class="card__name"><%=card.name%></p>
+		  <div class="grid-container">
+			<p><%=card.description%>
+			</p>
+		  </div>
+		</div>
+	<%})%>
+	  
+  </div>
+
+ 
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+	var cards = $('#card-slider .slider-item').toArray();
+
+startAnim(cards);
+
+function startAnim(array){
+    if(array.length >= 4 ) {
+        TweenMax.fromTo(array[0], 0.5, {x:0, y: 0, opacity:0.75}, {x:0, y: -120, opacity:0, zIndex: 0, delay:0.03, ease: Cubic.easeInOut, onComplete: sortArray(array)});
+
+        TweenMax.fromTo(array[1], 0.5, {x:79, y: 125, opacity:1, zIndex: 1}, {x:0, y: 0, opacity:0.75, zIndex: 0, boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', ease: Cubic.easeInOut});
+
+        TweenMax.to(array[2], 0.5, {bezier:[{x:0, y:250}, {x:65, y:200}, {x:79, y:125}], boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', zIndex: 1, opacity: 1, ease: Cubic.easeInOut});
+
+        TweenMax.fromTo(array[3], 0.5, {x:0, y:400, opacity: 0, zIndex: 0}, {x:0, y:250, opacity: 0.75, zIndex: 0, ease: Cubic.easeInOut}, );
+    } else {
+        $('#card-slider').append('<p>Sorry, carousel should contain more than 3 slides</p>')
+    }
+}
+
+function sortArray(array) {
+    clearTimeout(delay);
+    var delay = setTimeout(function(){
+        var firstElem = array.shift();
+        array.push(firstElem);
+        return startAnim(array); 
+    },3000)
+}
+  </script>
+<%- include("partials/footer") %>

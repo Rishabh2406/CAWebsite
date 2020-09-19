@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Sweta Sancheti|Contact</title>
+    <style>
+        body {
+            background: rgb(242, 244, 248);
+            background: radial-gradient(circle, rgba(242, 244, 248, 1) 0%, rgba(191, 192, 195, 1) 100%);
+        }
+    </style>
+<%- include("partials/nav")%>
+
+    <div class="container"
+        style="display: flex;justify-content: center;  flex-direction: column; padding-top: 20vh; width: 100%;">
+        <div class="row">
+            <div class="col" id="contact-right">
+                <h1 style="font-size: 3em; font-family: 'Lobster', cursive; color: steelblue;">
+                    Reach us at...
+                </h1>
+                <div class="container" style="color: gray; padding-top:10vh ;">
+                    <p>Address: Bangalore.</p>
+                    <p>Phone: +91 96200 81418</p>
+                    <p>Email: sweta0504@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="col" id="contact-left" style="width:100vh;">
+                <h1 style="color: steelblue; font-family: 'Lobster', cursive;font-size: 3em;">Reach us through...</h1>
+                <form action="/doubt" method="POST">
+                    <div class="form-group">
+                        <label for="InputName" style="color: black;">Name:</label>
+                        <input type="text" class="form-control" id="InputName" placeholder="Enter name" name="doubt[name]">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1" style="color: black;">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" name="doubt[email]">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputNumber" style="color: black;">Phone no.-</label>
+                        <input type="number" class="form-control" id="InputNumber" placeholder="Phone No." name="doubt[phone]">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputText" style="color: black;">Question:</label>
+                        <textarea class="form-control" id="InputText" name="doubt[description]"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background: steelblue;">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+<%- include("partials/footer") %>
